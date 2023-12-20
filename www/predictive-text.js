@@ -3,33 +3,21 @@
 let predictiveTextOptions = [
 "How can we reach you?",
 "What is your contact information?",
-"Can you share your email address?",
-"How can I get in touch with you?",
-"Tell me about your contact details.",
 
 "Tell me about yourself.",
 "Who are you?",
-"Share some information about you.",
 "Introduce yourself.",
 "What can you tell me about your background?",
 
 "Where did you study?",
 "Tell me about your education.",
 "What is your educational background?",
-"Can you share details about your schooling?",
-"Where are you currently studying?",
 
-"What skills do you have?",
-"Tell me about your expertise.",
-"What are your areas of specialization?",
-"Can you list your skills?",
-"What are you good at?",
+"what are your skills?",
+"what can you do?",
 
-"What are you currently working on?",
-"Tell me about your current activities.",
-"What projects are you involved in?",
-"Share details about your current tasks.",
-"What is keeping you busy right now?",
+"what you do",
+"what are you up to?",
 ];
 predictiveTextOptions.sort();
 

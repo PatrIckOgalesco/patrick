@@ -84,28 +84,23 @@ const handleOutgoingChat = async () => {
     // Use typing-text animation function instead of direct HTML response
     displayAnswerWithTypingEffect(greetingResponse);
     break; // Add the missing semicolon here
-  case 'about you':
-  case 'tell me about yourself':
+  case 'Tell me about yourself.':
   case 'who are you?':
-  case 'share some information about you':
-  case 'introduce yourself':
+  case 'Introduce yourself.':
+  case 'What can you tell me about your background?':
 
     const aboutMeResponse = `
-      Hello there, I am Patrick Ogalesco, an aspiring digital artist, boasting a unique fusion of technical prowess and artistic finesse. 
+      I am Patrick Ogalesco, 24 years old, an aspiring digital artist, boasting a unique fusion of technical prowess and artistic finesse. 
       Currently, I am passionately pursuing a BSc in Computer Science, immersing myself not only in the realm of coding and programming but also dedicating myself fervently to the canvas as an artist. <br><br>
       My journey seamlessly weaves together creativity and logic, charting a course toward innovative problem-solving and the creation of visually breathtaking solutions. Fueled by an innate curiosity and an unwavering commitment to bridging the gap between art and technology, I am poised to inject a fresh perspective into the world of digital art.
     `;
     displayAnswerWithTypingEffect(aboutMeResponse);
     break;
 
-    case 'education':
     case 'where did you study?':
     case 'tell me about your education':
     case 'what is your educational background?':
-    case 'can you share details about your schooling?':
-    case 'where are you currently studying?':
     const educationResponse = `
-    Education
     Here is a summary of my educational journey:
     - Christian Polytechnic Institute Of Catanduanes (2021 - 2024)
     - Catanduanes College (2020 - 2021)
@@ -114,31 +109,28 @@ const handleOutgoingChat = async () => {
   `;
   displayAnswerWithTypingEffect(educationResponse);
   break;
-  case 'area of expertise':
-  const expertiseResponse = `
-     I specialize in various skills that contribute to my expertise in the field. Here are some of my key areas:
-    - Photoshop
-    - Ibis Paint
-    - Krita
-    - HTML And CSS
-    - JavaScript
-    - PHP
-    - C
-    - C++
-    - JAVA
-    - Visual Basic
-    - Microsoft Application
-  `;
-  displayAnswerWithTypingEffect(expertiseResponse);
-  break;
+  
+
+  // case 'portfolio':
+  // case 'show me your work':
+
+  // const portfolioResponse = `
+  //   <img src="www/images/SimpleDrawingAppJS.png" id="Portfolio">
+  //   Here is an example of my work. I created this piece during my exploration of digital art.
+
+  //   <img src="www/images/SimpleDrawingAppJS.png" id="Portfolio">
+  //   Another project in my portfolio. This showcases my skills in web development.
+
+  //   <img src="www/images/SimpleDrawingAppJS.png" id="Portfolio">
+  //   Here's a snapshot of a coding project I worked on. It involves a mix of frontend and backend technologies.
+  // `;
+  // displayAnswerWithTypingEffect(portfolioResponse);
+  // break;
+
 
 
   case "what you do":
   case 'what are you up to?':
-  case 'tell me about your current projects':
-  case 'what are you currently learning?':
-  case 'share details about your ongoing tasks':
-  case 'what keeps you occupied?':
 
   const doingResponse = `Here's an overview of what I'm currently engaged in:
 
@@ -157,13 +149,8 @@ Digital Art
   break;
 
 
-
-  case 'skills':
   case 'what are your skills?':
-  case 'tell me about your abilities':
   case 'what can you do?':
-  case 'can you list your skills?':
-  case 'share information about your talents':
 
   const skillsResponse = `
     As a versatile individual with a passion for both technology and creativity, here are some of my key skills:
@@ -176,25 +163,33 @@ Digital Art
     - Adaptability
     - Attention to Details
     - Continuous Learning
+
+    I specialize in various skills that contribute to my expertise in the field. Here are some of my key areas:
+    - Photoshop
+    - Ibis Paint
+    - Krita
+    - HTML And CSS
+    - JavaScript
+    - PHP
+    - C
+    - C++
+    - JAVA
+    - Visual Basic
+    - Microsoft Application
   `;
   displayAnswerWithTypingEffect(skillsResponse);
   break;
 
-  case 'contact':
   case 'how can we reach you?':
   case 'what is your contact information?':
-  case 'can you share your email address?':
-  case 'how can I get in touch with you?':
-  case 'tell me about your contact details':
     const contactResponse = `
-      EMAIL
-      jpatrickogalesco@gmail.com
+      Thank you for reaching out! Feel free to contact me through the following:
+      
+      Email: jpatrickogalesco@gmail.com
 
-      PHONE
-      0938 070 ****
+      Phone: 0938 070 ****
 
-      LOCATION
-      Viga Catanduanes
+      Location: Viga Catanduanes
     `;
     displayAnswerWithTypingEffect(contactResponse);
     break;
