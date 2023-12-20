@@ -20,7 +20,6 @@
 
   --text-color: #343541;
   --icon-color: #a9a9bc;
-  --icon-hover-bg: #f1f1f3;
   --placeholder-color: #6c6c6c;
   --outgoing-chat-bg: #ECE8E1;
   --incoming-chat-bg: #F7F7F8;
@@ -313,12 +312,12 @@ span.material-symbols-rounded {
 
 .typing-textarea textarea {
   resize: none;
-  max-height: 50px; /* Increase the maximum height to 50px */
+  max-height: 45px; /* Increase the maximum height to 50px */
   width: 100%;
   border: none;
   padding: 15px 45px 15px 20px;
   color: var(--text-color);
-  font-size: .96rem;
+  font-size: 14px;
   border-radius: 3px;
   background: var(--incoming-chat-bg);
   outline: 1px solid var(--incoming-chat-border);
@@ -411,12 +410,12 @@ span.material-symbols-rounded {
 
 /*typing effect*/
 #typewriter {
-        color: #75a99c;
-        font-weight: bold;
+        color: #343541;
+        font-weight: normal;
       }
 
       #cursor {
-        color: #75a99c;
+        color: #343541;
         animation: blink 1s linear infinite;
       }
 
@@ -520,8 +519,11 @@ span.material-symbols-rounded {
   .default-text p{
     font-size: 1.2rem;
   }
+  .default-text {
+    padding: 0 110px;
+  }
   .chat-container .chat {
-    padding: 25px 10px;
+    padding: 25px 100px;
   }
 
   .chat-container .chat img {
@@ -585,7 +587,7 @@ span.material-symbols-rounded {
     font-size: 18px;
   }
   .default-text {
-    padding: 0 150px;
+    padding: 0 160px;
 
   .chat-container .chat {
     padding: 30px 150px !important;
